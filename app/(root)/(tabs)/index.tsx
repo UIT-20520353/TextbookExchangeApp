@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import { Text, View } from "react-native";
 
 export default function Index() {
@@ -9,7 +10,9 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text className="font-bold text-2xl">Welcome!</Text>
+      <Link href="/sign-in">Sign in</Link>
+      <Link href="/books/1">Book detail</Link>
     </View>
   );
 }
